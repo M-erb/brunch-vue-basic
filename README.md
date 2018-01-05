@@ -1,8 +1,8 @@
-# Brunch Vue Barebones
+# Brunch Vue Basic
 
-A _barebones_ Brunch skeleton for [Vue.js](https://vuejs.org/) - minimal dependencies!
+A Basic Brunch skeleton for [Vue.js](https://vuejs.org/) - minimal dependencies!
 
-Unlike other skeletons with Vue, `brunch-vue-barebones` is based on the official scaffold provided by the Vue.js core team ([vue-cli](https://github.com/vuejs/vue-cli)). The only dependencies are `vue` and `vue-router`; configure it how you like!
+<!-- Unlike other skeletons with Vue, `brunch-vue-barebones` is based on the official scaffold provided by the Vue.js core team ([vue-cli](https://github.com/vuejs/vue-cli)). The only dependencies are `vue` and `vue-router`; configure it how you like! -->
 
 Thanks to [https://github.com/nblackburn](@nblackburn) for his work on [vue-brunch](https://github.com/nblackburn/vue-brunch)
 
@@ -17,7 +17,7 @@ npm install -g brunch
 2. Create a new Brunch project using _this_ skeleton
 
 ```bash
-brunch new -s vue
+brunch new --skeleton https://github.com/M-erb/brunch-vue-basic
 ```
 
 ### Manual Install
@@ -39,7 +39,3 @@ You can clone this repo manually!
   * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
   * Place static files you want to be copied from `app/assets/` to `public/`.
   * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
-
-## TODO
-
-* Add support for Hot Module Reloading with [hmr-brunch](https://github.com/brunch/hmr-brunch)
