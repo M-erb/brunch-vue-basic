@@ -1,0 +1,115 @@
+#projects_main {
+  margin: 48px auto;
+  @media (max-width: 500px) {
+    margin: 32px auto;
+  }
+  .project_container {
+    width: 100%;
+    @media(min-width: 1020px) {
+      width: 952px;
+    }
+    .market_sec_card {
+        @extend .shadow_1;
+        margin: 24px;
+        transition: all .3s;
+        display: inline-block;
+        width: 400px;
+        vertical-align: top;
+        transition: all .3s;
+        @media(max-width: 1020px) {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &.active {
+            width: calc(100% - 48px);
+            @media(max-width: 1020px) {
+                width: 100%;
+            }
+        }
+        &:hover {
+            @extend .shadow_3;
+        }
+      a.card_topper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #fff;
+        background-color: $gray;
+        padding: 16px;
+        .card_img {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i.fa {
+                color: #fff;
+                font-size: 3rem;
+            }
+        }
+        .card_title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0 32px;
+        }
+        .indicator {
+            i.fa {
+                // color:$colorSecondary;
+                color:#fff;
+            }
+        }
+      }
+    .project_dropdown {
+        ul {
+            margin: 0;
+            padding: 24px 24px 24px 32px;
+            border-top: 2px solid $x_light_gray;
+            transition: all .3s;
+            list-style: none;
+            li {
+                padding: 8px 12px;
+                background-color: $light-gray;
+                &:nth-child(odd) {
+                    background-color: #fff;
+                }
+            }
+            ul {
+                margin: 0 0 0 30px;
+                padding: 0;
+                border-top: none;
+                list-style: disc;
+                li {
+                    padding: 8px 12px 8px 0;
+                    background-color: transparent;
+                    &:nth-child(odd) {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+      @media (max-width: 500px) {
+        margin-top: 0;
+        a.card_topper {
+          .card_title {
+            font-size: 1.2rem;
+            padding: 0 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.open_list-enter-active, .open_list-leave-active {
+  transition: all .5s
+}
+.open_list-enter, .open_list-leave-to {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}

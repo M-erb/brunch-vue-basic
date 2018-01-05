@@ -1,0 +1,61 @@
+#contact_us {
+  .contact_info {
+    display: flex;
+    flex-wrap: wrap;
+    .address_box {
+      // flex: 1 1 50%;
+      flex-grow: 2;
+      padding: 8px 8px 24px 8px;
+      @media (max-width: 600px) {
+        order: 1;
+      }
+      div {
+        margin-bottom: 8px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .divide {
+      @media (max-width: 600px) {
+        display: none;
+      }
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      div {
+        border-left: 2px solid $light_gray;
+      }
+    }
+    .people_box {
+      // flex: 1 1 50%;
+      flex-grow: 2;
+      padding: 8px;
+      @media (max-width: 600px) {
+        order: 5;
+      }
+      .person {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        .img {
+            //   background-image: url('/wp-content/themes/mpe/img/placeholder-286x280.png');
+            //   background-position: center;
+            //   background-repeat: no-repeat;
+            //   background-size: cover;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+            margin-right: 8px;
+            }
+        .person_info {
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
