@@ -1,5 +1,5 @@
 {
-  "name": "brunch-vue-merb",
+  "name": "brunch-vue-sass",
   "description": "A merb Vue Skeleton for Brunch",
   "version": "0.0.1",
   "repository": {
@@ -31,8 +31,7 @@
     "brunch": "^2.10.10",
     "clean-css-brunch": "^2",
     "sass-brunch": "git+https://github.com/brunch/sass-brunch.git",
-    "uglify-js-brunch": "^2",
-    "vue-brunch": "^2.0.1"
+    "uglify-js-brunch": "^2"
   },
   "license": "ISC"
 }

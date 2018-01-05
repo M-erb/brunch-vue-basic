@@ -1,27 +1,30 @@
-var headroom
-module.exports.headRoom = headroom
+import Vue from 'vue'
+
 module.exports.siteNav = Vue.component('site-nav', {
-  data() {
-    return {
-      location: window.location,
-      isMobiNavOpen: false
-    }
-  },
-  props: [],
-  methods: {
-    toggleMobiNav() {
-      if (this.isMobiNavOpen) {
-        this.isMobiNavOpen = false
-        this.$root.htmlBody.classList.remove('no_scroll')
-      } else {
-        this.isMobiNavOpen = true
-        this.$root.htmlBody.classList.add('no_scroll')
-      }
+    template: `
+    <header>
+        {{test}}
+    </header>`,
+    data() {
+        return {
+            location: window.location,
+            isMobiNavOpen: false,
+            test: 'hello world'
+        }
     },
-  },
-  mounted: function() {
-    var el = document.querySelector('#masthead.headroom')
-    headroom = new Headroom(el)
-    headroom.init()
-  }
+    props: [],
+    methods: {
+        toggleMobiNav() {
+            if (this.isMobiNavOpen) {
+                this.isMobiNavOpen = false
+                this.$root.htmlBody.classList.remove('no_scroll')
+            } else {
+                this.isMobiNavOpen = true
+                this.$root.htmlBody.classList.add('no_scroll')
+            }
+        },
+    },
+    mounted: function() {
+        console.log('site-nav.js')
+    }
 })

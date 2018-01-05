@@ -18,5 +18,10 @@ module.exports = {
     babel: {
       presets: ['es2015']
     }
+  },
+  npm: {
+      aliases: {
+          vue: 'vue/dist/vue.js'
+      }
   }
 }
